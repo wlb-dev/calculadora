@@ -13,6 +13,8 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 260px;
+    margin: auto;
 }
 h1{
     text-align: center;
@@ -35,6 +37,7 @@ h1{
     column-gap: 5px;
     row-gap: 5px;
     text-align: center;
+    max-width: 500px;
 }
 .tecla{
     border: none;
