@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255 191 191);
+    font-family: "Source Code Pro", monospace;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    color: rgb(170 31 32);
+    font-weight: 500;
+    font-size: 20px;
+}
+.container_teclas{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+    ". . . . r r r r . . . ."
+    ". . . . a b c d . . . ."
+    ". . . . e f g h . . . ."
+    ". . . . i j k l . . . ."
+    ". . . . m n n o . . . .";
+    column-gap: 5px;
+    row-gap: 5px;
+    text-align: center;
+}
+.tecla{
+    border: none;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(100 100 100);
+}
+.tecla:active{
+    transform: translateY(2px);
+}
+.numero{
+    background-color: rgb(216, 216, 216);
+}
+#resultado{
+    border: none;
+    width: 250px;
+    height: 30px;
+    grid-area: r;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 2px rgb(100 100 100) inset;
+}
+#calcular{
+    grid-area: n;
+    width: 125px;
+    background-color: rgb(100 100 100);
+
+    color: rgb(255, 255, 255);
+}
+#subtrair{
+    grid-area: l;
+}
+#somar{
+    grid-area: o;
+}
+#dividir{
+    grid-area: d;
+}
+#multiplicar{
+    grid-area: h;
+}
+#nbr0{
+    grid-area: m;
+}
+#nbr1{
+    grid-area: i;
+}
+#nbr2{
+    grid-area: j;
+}
+#nbr3{
+    grid-area: k;
+}
+#nbr4{
+    grid-area: e;
+}
+#nbr5{
+    grid-area: f;
+}
+#nbr6{
+    grid-area: g;
+}
+#nbr7{
+    grid-area: a; 
+}
+#nbr8{
+    grid-area: b;
+}
+#nbr9{
+    grid-area: c;
+}
